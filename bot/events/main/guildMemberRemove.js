@@ -11,6 +11,7 @@ module.exports = {
         if(member.user.bot) return;
         
         const channel = member.guild.channels.cache.get(data.Channel);
+        if(!channel) return
 
         const embed = new EmbedBuilder()
         .setAuthor({name: `Member Left`, iconURL: `${member.displayAvatarURL({dynamic: true})}`})
