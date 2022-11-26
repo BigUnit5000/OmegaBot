@@ -12,6 +12,7 @@ module.exports = {
             if(!data) return;
        
             const channel = member.guild.channels.cache.get(data.Channel);
+            if(!channel) return
 
             const embed = new EmbedBuilder()
             .setColor("#2f3136")
