@@ -12,7 +12,7 @@ module.exports = {
             if(!data) return;
        
             const channel = member.guild.channels.cache.get(data.Channel);
-            if(!channel) return
+            if(!member.guild.channels.cache.has(data.Channel)) return;
 
             const embed = new EmbedBuilder()
             .setColor("#2f3136")
@@ -39,6 +39,7 @@ module.exports = {
             if(!data) return;
        
             const channel = member.guild.channels.cache.get(data.Channel);
+            if(!member.guild.channels.cache.has(data.Channel)) return;
 
             const embed = new EmbedBuilder()
             .setAuthor({name: `New Member`, iconURL: `${member.displayAvatarURL({dynamic: true})}`})
