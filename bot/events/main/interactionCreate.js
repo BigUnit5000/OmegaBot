@@ -471,6 +471,8 @@ module.exports = {
 
                 Schema.findOne({ Guild : interaction.guild.id, MessageID : interaction.message.id }, async (err, data) => {
 
+                    if(!data) return
+
                     const roleList = data.Roles;
                     const roleListArray = roleList.split(' ');
 
