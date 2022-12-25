@@ -349,6 +349,7 @@ module.exports = {
                     {name: "**• /music resume :**", value: "Resumes paused music while in a voice channel"},
                     {name: "**• /music leave :**", value: "Makes the bot leave the voice channel"},
                     {name: "**• /panda :**", value: "Sends a random picture of a panda."},
+                    {name: "**• /tic-tac-toe :**", value: "Let’s you play tic tac toe against the bot or a different user."},
                     {name: "**• /rock-paper-scissors :**", value: "Lets you play rps against the bot."},
                 )
 
@@ -373,7 +374,6 @@ module.exports = {
                     {name: "**• /setup tickets :**", value: "Pick what category the ticket gets sent to, choose what message you want to send in the panel, what category the tickets go to, what message the bot sends at the start of the ticket, and what role gets pinged."},
                     {name: "**• /setup audit-log :**", value: "Choose what channel the bot will send audit log messages to."},
                     {name: "**• /setup levels :**", value: "Choose what channel level up messages get sent to and what channel you do not want members to get xp from."},
-                    {name: "**• /setup suggestions :**", value: "Lets you choose what channel you want suggestions to be sent to. (Goes hand in hand with /suggest)"},
                     {name: "**• /setup role counter :**", value: "Shows how many members with a chosen role you have in your server with a channel counter."},
                     {name: "**• /setup member counter :**", value: "Shows how many members you have in your server with a channel counter."},
                     {name: "**• /setup bot counter :**", value: "Shows how many bots you have in your server with a channel counter."},
@@ -410,9 +410,16 @@ module.exports = {
                     {name: "**• /level :**", value: "Get your current level, current xp number, and how much more xp you need."},
                     {name: "**• /ping :**", value: "Get the bots response time."},
                     {name: "**• /poll :**", value: "Create a poll with up to 20 options."},
-                    {name: "**• /suggest :**", value: "Lets you make a suggestion to the suggestion channel. (requires /setup suggestions beforehand)"},
+                    {name: "**• /purge :**", value: "Let’s you delete up to 100 messages."},
+                    {name: "**• /translate :**", value: "Let’s you translate things from so many languages."},
+                    {name: "**• /rank info :**", value: "Gathers your rank for that server."},
+                    {name: "**• /rank leaderboard :**", value: "Gathers server rank leaderboard."},
+                    {name: "**• /rankdata set xp :**", value: "Let’s admins change a users xp."},
+                    {name: "**• /rankdata add level :**", value: "Let’s admins add levels to selected user."},
+                    {name: "**• /rankdata set level :**", value: "Let’s admins set a level for selected user."},
+                    {name: "**• /rankdata add xp :**", value: "Let’s admins add xp to users."},
                     {name: "**• /whois :**", value: "Gathers info on a certain user."},
-                )
+                
 
                 const messageDelete = new ButtonBuilder()
                 .setCustomId("messageDelete")
