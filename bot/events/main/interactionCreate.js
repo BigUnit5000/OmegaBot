@@ -266,6 +266,33 @@ module.exports = {
                 if(think === 1) interaction.message.edit({embeds: [tails], components: [flip]});
 
             }
+            if (interaction.customID === "guideFeatures")  {
+                
+                const embed = new EmbedBuilder()
+                .setTitle("__How To Set Omega Bot Up For Your Server__")
+                .setColor("#2f3136")
+                .setThumbnail("https://cdn.discordapp.com/avatars/988620875622391839/b6c0770832a33d5899119459a87617a6.webp")
+                .setDescription("**1. Getting the bot in your server**
+                    You can either use this link https://omegabot.xyz/invite or go to the @Omega Bot#3110 profile and click “Add to Server”
+
+                    **2. Role Hierarchy**
+                     In order for the bot to function it’s recommended you have a bot role (or the Omega Bot role) above all roles. Here’s a video explaining what role hierarchy is. https://youtu.be/DL__fIfR5zU
+
+                    __Note__
+                    The following setup procedures aren’t necessary.
+
+                    **3. Set Up Commands**
+                    Check out features for info on all of these commands.
+                    __Tickets :__ */setup ticket | panel-message: (What you want the panel to create the ticket to be) | ticket-category: (What category you want tickets to go to )| ticket-message: (What you want the bot to say to the member in the ticket after creation) | ticket-role: (What role gets pinged) |*
+                    __Link Detector :__  */setup Link-Detector | Status : (Chooses if you want it on or off) | Excluded Role : Role that doesn’t get affected by the Detector |* 
+                    __Boost Tracker :__  */setup boost-tracker | Channel : You want the boost tracker to be in |*
+                    __Levels :__ */setup Levels | Channel |*
+                    __Suggestion Channel :__ */setup Suggestions | Channel |*
+                    __Role, Member, Bot, Online Counter :__ */setup (Which ever counter you want to setup) : | Channel |*
+                    __Welcomes :__ */setup welcomes : | channel |*
+                    __Auto Role :__ */setup autorole : | role |*
+                    __Member Log :__  */setup member log : | channel |*
+                    __Audit logs :__ */setup audit (insert dedicated channel)*")
 
             if(interaction.customId === "guideSupportServer") {
 
